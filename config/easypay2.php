@@ -5,9 +5,9 @@ return [
 	
 	'sandbox' => [
 		'endpoint' => 'https://test.wirecard.com.sg/easypay2/paymentpage.do?',
-		'mid' => '20151111011',
-		'security_key' => 'ABC123456',
-		'security_seq' => 'amt,ref,cur,mid,transtype',
+		'mid' => 'xxx',
+		'security_key' => 'xxx',
+		'security_seq' => 'xxx',
 	],
 
 	'live' => [
