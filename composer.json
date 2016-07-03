@@ -1,0 +1,13 @@
+{
+    "name": "cuonghuynh/easypay2-laravel-5",
+    "description": "Built-in Easypay2 APIs",
+    "type": "package",
+    "authors": [
+        {
+            "name": "Cuong Huynh",
+            "email": "cuongdev@hotmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
