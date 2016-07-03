@@ -9,5 +9,13 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "5.0.x|5.1.x|5.2.x"
+    },
+    "autoload": {
+        "psr-4": {
+            "CuongHuynh\\EasyPay2\\": "src/EasyPay2"
+        }
+    }
 }
