@@ -1,7 +1,6 @@
 **EasyPay V.2 Payment for Laravel 5**
 -------------------------------------
-[TOC]
-## **Laravel**
+## Laravel
 
 After updating composer, add the PackageServiceProvider to the providers array in `config/app.php`
 
@@ -17,19 +16,16 @@ Publish the config-file.
 
 You will have `easypay2.php` in config folder
 
-----------
+-------------------------------------
 
-## **Usage**
-
-
-----------
+## Usage
 
 
-### **<a name="workflow-image"></a>EasyPay Flow**
+### <a name="workflow-image"></a>EasyPay Flow
 
 ![workshop image](https://lh4.googleusercontent.com/-MGXxXHzYbRQ/V3kcB4JPfkI/AAAAAAAAaUo/pd5e5eu9JaU4nRLJ-6BzKCZbBTW3KvxawCL0B/w788-h548-no/EasyPay2Flow.png)
 
-### **<a name="settings"></a>Settings**
+### <a name="settings"></a>Settings
 
 Switch to `sandbox` mode by set to `true` in `config/easypay2.php`
 
@@ -56,7 +52,7 @@ Switch to `sandbox` mode by set to `true` in `config/easypay2.php`
  - *security_key*: Security parameters.
  - *security_seq*: Order to make hashed string, for example: `amt,ref,cur,mid,transtype`
 
-### **<a name="make-transaction"></a>Make a Transaction**
+### <a name="make-transaction"></a>Make a Transaction
 
 Set URL to receive payment status and return after customer make payment.
 
@@ -86,12 +82,12 @@ Set other payment parameters
         EasyPay2::makeTransaction(15);
         $requestUrl = EasyPay2::requestUrl();
    
-### **<a name="send-transaction"></a>Send Transaction**
+### <a name="send-transaction"></a>Send Transaction
 Use a Laravel helper to redirect customer to Payment page
 
     return redirect($requestUrl);
 
-### **<a name="receive-status-response"></a>Receive Payment status**
+### <a name="receive-status-response"></a>Receive Payment status
 This process totally in backend, customer can't see Status response. After customer do payment, EasyPay will send a **POST** request to *statusurl* with parameters ([see workflow image](#workflow-image)).
 
 In your controller, get all inputs
@@ -127,16 +123,18 @@ Implement, cause Easypay make a new request so we need regenerate values for Eas
  
 Check if `$mdHashed` is same `$signature`, the request is valid and make other steps.
 
-### **<a name="send-acknowledge-response"></a>Send Acknowledge Response**
+### <a name="send-acknowledge-response"></a>Send Acknowledge Response
 
 After check signature in status response, Merchant must to send ACK to EasyPay to confirm receiving request.
 
     EasyPay2::set('ack', 'YES');
     $requestUrl = EasyPay2::requestUrl();
 
-### **<a name="send-void-request"></a>Send REVERSAL / VOID request if don't receive status response**
+### <a name="send-void-request"></a>Send REVERSAL / VOID request if don't receive status response
 
 > Content updating ...
 
-## **License**
+-------------------------------------
+
+## License
 This EasyPay2 for Laravel 5 is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
