@@ -1,28 +1,22 @@
 {
     "name": "cuonghuynh/easypay2-laravel-5",
-    "description": "Built-in Easypay2 APIs",
-    "type": "package",
+    "description": "Easypay2 Gateway",
+    "keywords": ["payment","easypay"],
+    "type": "library",
+    "license": "MIT",
     "authors": [
         {
             "name": "Cuong Huynh",
             "email": "cuongdev@hotmail.com"
         }
     ],
-    "autoload": {
-        "psr-4": {
-            "CuongHuynh\\EasyPay2\\": "src/EasyPay2"
-        }
-    },
     "require": {
         "php": ">=5.4.0",
         "illuminate/support": "5.0.x|5.1.x|5.2.x"
     },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/cuonghuynh/easypay2-laravel-5"
+    "autoload": {
+        "psr-4": {
+            "CuongHuynh\\EasyPay2\\": "src/EasyPay2"
         }
-    ],
-    "prefer-stable": true,
-    "minimum-stability": "stable"
+    }
 }
