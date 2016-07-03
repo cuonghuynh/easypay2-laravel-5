@@ -18,5 +18,11 @@
         "php": ">=5.4.0",
         "illuminate/support": "5.0.x|5.1.x|5.2.x"
     },
-    "prefer-stable": true
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/cuonghuynh/easypay2-laravel-5"
+        }
+    ]
 }
