@@ -1,4 +1,4 @@
-**EasyPay V.2 Payment for Laravel 5**
+# EasyPay V.2 Payment for Laravel 5
 
 ## Laravel
 
