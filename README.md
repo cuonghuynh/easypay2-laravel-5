@@ -1,5 +1,5 @@
 **EasyPay V.2 Payment for Laravel 5**
--------------------------------------
+
 ## Laravel
 
 After updating composer, add the PackageServiceProvider to the providers array in `config/app.php`
@@ -16,7 +16,6 @@ Publish the config-file.
 
 You will have `easypay2.php` in config folder
 
--------------------------------------
 
 ## Usage
 
@@ -134,7 +133,6 @@ After check signature in status response, Merchant must to send ACK to EasyPay t
 
 > Content updating ...
 
--------------------------------------
 
 ## License
 This EasyPay2 for Laravel 5 is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
